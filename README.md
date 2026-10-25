@@ -148,7 +148,9 @@ This is how the live site was set up.
 - 💳 **No payments.** Add Razorpay or Stripe before charging real money.
 - 🚦 **Rate limiting resets** when the server restarts or when Vercel runs a second instance. For strict limits, switch `lib/guard.ts` to Upstash Redis (`@upstash/ratelimit`).
 - 💾 **Backups.** The free Supabase plan has no daily backups. Use the Pro plan or schedule `pg_dump`.
-- ✏️ **Product editing.** The API supports updating a product (`PUT /api/products/:id`), but the page has no edit button yet.
+- ✏️ **Product editing.** The database allows owners to update products, but this repository has no `PUT /api/products/:id` route and the page has no edit button yet.
+- 🧩 **Routes missing from this repository.** The page calls `/api/checkout`, `/api/cart/{id}` (change quantity, remove) and `/api/products/{id}` (delete). Here, the checkout folder is spelled `cheackout` and the `[id]` routes do not exist, so those buttons would fail until the routes are added. Details are in [`app/api/README.md`](app/api/README.md#routes-the-page-calls-that-are-missing).
+- 🖼️ **Missing images.** `docs/banner.svg` and `docs/architecture.svg` are referenced at the top of this file but are not in the repository.
 - 📧 **Email sending.** Supabase's built-in email sender is rate limited. Set up your own SMTP for production.
 - 🧪 **Not fully tested.** The project builds and deploys, but the full flow (sign up, order, owner actions) has not been run end to end.
 
