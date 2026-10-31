@@ -17,7 +17,7 @@ A small online shop for filter coffee and tumblers. 🛒 Customers log in, add p
 
 🌍 **Live site:** https://kaapi-kadai-sail22.vercel.app
 
-The Site`s UI may be looking not good or looking simple soon i will at that and i will make sure to look embrasse!
+The Site`s UI may be looking not good or looking simple ,Soon i will look at that and i will make sure to look embrasse!
 
 > 💡 If the site asks you to log in to Vercel, turn off Vercel Authentication: Vercel project > Settings > Deployment Protection.
 
